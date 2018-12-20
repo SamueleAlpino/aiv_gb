@@ -21,7 +21,7 @@ static void add(aiv_gameboy *gb, u8_t adder)
 
     //reset N flag
     aiv_gb_set_flag(gb, NEG, 0);
-
+    
     gb->a = sum & 0xFF;
     aiv_gb_set_flag(gb, ZERO, gb->a == 0);
 }
